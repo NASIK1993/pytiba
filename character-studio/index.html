@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#bfe3ff" />
+    <title>Character Studio</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage">
+        <canvas id="scene"></canvas>
+        <header id="topbar">
+          <div class="brand">Character Studio</div>
+          <div class="actions">
+            <button id="btn-random" class="icon-btn" title="Randomize" aria-label="Randomize">🎲</button>
+            <button id="btn-photo" class="icon-btn" title="Take photo" aria-label="Take photo">📷</button>
+            <button id="btn-reset" class="icon-btn" title="Reset view" aria-label="Reset view">🎯</button>
+          </div>
+        </header>
+      </div>
+      <section id="panel">
+        <button id="btn-toggle" class="grabber" aria-label="Show or hide panel"><span></span></button>
+        <nav id="tabs"></nav>
+        <div id="panel-body"></div>
+      </section>
+    </div>
+    <div id="photo-modal">
+      <div class="photo-card">
+        <img id="photo-img" alt="Snapshot of your character" />
+        <p class="help">Long-press the image to save it, or use Download.</p>
+        <div class="photo-actions">
+          <a id="photo-download" class="chip on">Download</a>
+          <button id="photo-close" class="chip">Close</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

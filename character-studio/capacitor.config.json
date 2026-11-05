@@ -1,0 +1,8 @@
+{
+  "appId": "com.pytiba.characterstudio",
+  "appName": "Character Studio",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#bfe3ff"
+  }
+}
